@@ -1,20 +1,33 @@
 body {
   margin: 0%;
-
+  background-color: #FFFED7;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(20, 1fr);
-  grid-column-gap: 10px;
+  grid-template-rows: 60px 90px 40px 70px 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
   width: 320px;
-  height: 480px;
+  height: 440px;
 }
 
-.test {
+nav {
   grid-column: 1 / 6;
-  grid-row: 1 / 21;
+  grid-row: 1 / 2;
+  background-color: #BF3837;
+}
+
+.bar {
+  grid-column: 1 / 6;
+  grid-row: 3 / 4;
+  background-color: #BF3837;
+}
+
+.whatis {
+  grid-column: 1 / 6;
+  grid-row: 4 / 5;
   background-color: rgb(135, 179, 112);
 }
 
