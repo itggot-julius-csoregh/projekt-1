@@ -12,8 +12,8 @@ body {
 main {
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 60px 90px 40px 95px 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr) 64px;
+  grid-template-rows: 64px 90px 40px 95px 1fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 10px;
   width: 100vw;
@@ -21,7 +21,6 @@ main {
   opacity: 1;
   transition: 0.5s;
   position: absolute;
-  z-index: 0;
 }
 
 .menuButton {
@@ -40,11 +39,24 @@ nav {
   width: 70vw;
   height: 100vh;
   position: absolute;
-  background: white;
-  z-index: 1;
+  background: rgb(240, 240, 240);
+  top: 64px;
+  left: 30vw;
+  /*border-left: 2px solid black;*/
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  /* background-color: orange; */
+  padding: 3px;
+  margin: 10vh;
 }
 
 .show {
