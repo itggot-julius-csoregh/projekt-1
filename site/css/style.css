@@ -1,6 +1,7 @@
 body {
   margin: 0%;
   background-color: #FFFED7;
+  overflow-y: hidden;
 }
 
 .fade {
@@ -19,6 +20,8 @@ main {
   height: 100vh;
   opacity: 1;
   transition: 0.5s;
+  position: absolute;
+  z-index: 0;
 }
 
 .menuButton {
@@ -34,15 +37,20 @@ nav {
 }
 
 .menu {
-  width: 80vh;
+  width: 70vw;
   height: 100vh;
   position: absolute;
   background: white;
-  display: none;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .bar {
